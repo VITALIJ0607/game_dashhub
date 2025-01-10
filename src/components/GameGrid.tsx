@@ -12,7 +12,7 @@ const GameGrid = () => {
       {error && <Text>{error}</Text>}
       <ul>
         {data.map((game) => (
-          <SimpleGrid columns={3} padding="10px" spacing={10}>
+          <SimpleGrid columns={3} padding="10px" spacing={3}>
             {isLoading &&
               skeletons.map((skeleton) => (
                 <GameCardContainer>
