@@ -4,6 +4,7 @@ import CriticScore from "./CriticScore";
 import DefinitionItem from "./DefinitionItem";
 import { Game } from "../entities/Game";
 import GameTrailer from "./GameTrailer";
+import GameScreenshots from "./GameScreenshots";
 
 interface Props {
   game: Game;
@@ -30,7 +31,6 @@ const GameAttributes = ({ game }: Props) => {
           <Text>{publisher.name}</Text>
         ))}
       </DefinitionItem>
-      <GameTrailer gameId={game.id} />
     </SimpleGrid>
   );
 };
