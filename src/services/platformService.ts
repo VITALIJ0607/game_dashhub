@@ -1,9 +1,4 @@
 import ApiClient from "./api-client";
-
-export interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
+import { Platform } from "../entities/Platform";
 
 export default new ApiClient<Platform>("/platforms/lists/parents");
